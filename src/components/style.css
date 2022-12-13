@@ -1,0 +1,35 @@
+.bttn {
+    position: relative;
+    overflow: hidden;
+    width: 160px;
+    height: 42px;
+    margin: 24px 0;
+}
+
+.btn.test-completed::after,
+.btn.test-completed::before {
+    content: "Hire me";
+    position: absolute;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.5;
+
+    transition: all 400ms;
+    top: 0;
+    left: 35px;
+}
+
+.btn.btn.test-completed:hover::after {
+    top: -36px;
+}
+
+.btn.test-completed::before {
+    content: "Dowload cv";
+    top: 36px;
+}
+
+.btn.btn.test-completed:hover::before {
+    top: 0;
+}
